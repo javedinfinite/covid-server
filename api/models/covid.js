@@ -8,11 +8,11 @@ createData =  (state_current, state_info) =>{
     let length = state_current.data.length
     for(i=0; i<length; i++){
         let newObject = {
-            "state": state_current.data[0]['state'],
-            "positive": state_current.data[0]['positive'],
-            "totalTestResults": state_current.data[0]['totalTestResults'],
-            "notes": state_info.data[0]['notes'],
-            "covid19Site": state_info.data[0]['covid19Site'],
+            "state": state_current.data[i]['state'],
+            "positive": state_current.data[i]['positive'],
+            "totalTestResults": state_current.data[i]['totalTestResults'],
+            "notes": state_info.data[i]['notes'],
+            "covid19Site": state_info.data[i]['covid19Site'],
         }
         combinedArray.push(newObject)
     }
