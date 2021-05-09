@@ -16,6 +16,7 @@ createData =  (state_current, state_info) =>{
         }
         combinedArray.push(newObject)
     }
+    combinedArray.sort((a, b) => b.positive - a.positive);
     return combinedArray
     
 }
